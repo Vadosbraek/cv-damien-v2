@@ -143,14 +143,24 @@ nav a:hover {
 }
 .ancre {
   display: inline-block;
-  
+  cursor: pointer;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
-  background-color: #0e0d0d;
-  padding: 5px 10px;
+  background-color: #5b6eae;
+  padding: 2px 10px;
   border: 2px solid #000000; /* si tu veux un cadre noir */
-  border-radius: 5px; /* optionnel : angles arrondis */
+  border-radius: 10px; /* optionnel : angles arrondis */
+  font-size: 26px;
+  transition: background 0.3s;
+}
+.ancre button:hover{
+  background-color: #000000;
+  transition: background 0.3s;
+}
+.ancre button{
+  position: relative;
+  z-index: 1;
 }
 a{
   text-decoration: none;
