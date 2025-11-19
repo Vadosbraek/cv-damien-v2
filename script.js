@@ -17,6 +17,13 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+const select = document.getElementById("fichiers");
 
+  select.addEventListener("change", function() {
+    const url = this.value; // récupère le lien du fichier
+    if (url) {
+      window.location.href = url; // redirige vers le fichier pour le téléchargement
+    }
+  });
 
 
